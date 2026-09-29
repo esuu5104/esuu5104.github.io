@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Esayies A. Wassie | Structural Engineering Researcher</title>
+
+<style>
+
+/* ===== GENERAL ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    color: #263238;
+    background: #f5f7fa;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 45px;
+    color: #123b5d;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ===== NAVIGATION ===== */
+
+nav {
+    background: #123b5d;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #8fd3ff;
+}
+
+
+/* ===== HERO ===== */
+
+.hero {
+    background: linear-gradient(135deg, #123b5d, #1976b8);
+    color: white;
+    padding: 100px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text small {
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #b9e5ff;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin: 15px 0;
+}
+
+.hero h3 {
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-right: 10px;
+    border-radius: 6px;
+    background: white;
+    color: #123b5d;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #e8f4fb;
+}
+
+
+/* ===== PROFILE PHOTO ===== */
+
+.profile {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid rgba(255,255,255,0.5);
+    flex-shrink: 0;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ===== ABOUT ===== */
+
+.about {
+    background: white;
+}
+
+.about-text {
+    max-width: 900px;
+    margin: auto;
+    font-size: 17px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+
+/* ===== RESEARCH ===== */
+
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card h3 {
+    color: #123b5d;
+    margin-bottom: 15px;
+}
+
+
+/* ===== EXPERIENCE ===== */
+
+.experience {
+    background: white;
+}
+
+.experience-box {
+    max-width: 900px;
+    margin: auto;
+}
+
+.experience-item {
+    border-left: 5px solid #1976b8;
+    padding: 25px;
+    margin-bottom: 25px;
+    background: #f5f7fa;
+}
+
+.experience-item h3 {
+    color: #123b5d;
+}
+
+.experience-item .date {
+    color: #1976b8;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/* ===== THESIS ===== */
+
+.thesis-box {
+    max-width: 950px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.thesis-box h3 {
+    color: #123b5d;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.thesis-box ul {
+    margin: 15px 0 15px 25px;
+}
+
+
+/* ===== WEB APP ===== */
+
+.webapp {
+    background: #eaf4fb;
+}
+
+.app {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    background: white;
+    padding: 45px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.app h3 {
+    font-size: 28px;
+    color: #123b5d;
+    margin-bottom: 15px;
+}
+
+.app-button {
+    display: inline-block;
+    margin-top: 25px;
+    margin-right: 10px;
+    padding: 13px 25px;
+    background: #1976b8;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.app-button:hover {
+    background: #123b5d;
+}
+
+
+/* ===== PUBLICATIONS ===== */
+
+.publication {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.publication h3 {
+    color: #123b5d;
+    margin-bottom: 12px;
+}
+
+.publication a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #1976b8;
+    font-weight: bold;
+}
+
+
+/* ===== EDUCATION ===== */
+
+.education-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.education-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.education-card h3 {
+    color: #123b5d;
+    margin-bottom: 10px;
+}
+
+
+/* ===== SKILLS ===== */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.skill {
+    background: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    border: 1px solid #d6dce2;
+}
+
+
+/* ===== CONTACT ===== */
+
+.contact {
+    background: #123b5d;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    color: white;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+.contact a {
+    color: #9edcff;
+}
+
+
+/* ===== FOOTER ===== */
+
+footer {
+    background: #0a263c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 800px) {
+
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+
+<nav>
+
+<div class="container nav-container">
+
+<div class="logo">
+Esayies A. Wassie
+</div>
+
+<ul>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#research">Research</a></li>
+
+<li><a href="#experience">Experience</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#publications">Publications</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</div>
+
+</nav>
+
+<!-- ===== HERO ===== -->
+
+<header class="hero">
+
+<div class="container hero-content">
+
+<div class="hero-text">
+
+<small>CIVIL & STRUCTURAL ENGINEER</small>
+
+<h1>Esayies A. Wassie</h1>
+
+<h3>Structural Engineering Researcher</h3>
+
+<p>
+
+Integrating artificial intelligence, explainable machine learning,
+and structural engineering to develop data-driven approaches for
+safe, resilient, and intelligent civil infrastructure.
+
+</p>
+
+<div class="hero-buttons">
+
+<a class="button" href="#research">
+My Research
+</a>
+
+<a class="button" href="#publications">
+Publications
+</a>
+
+</div>
+
+</div>
+
+<!-- PROFILE PHOTO -->
+
+<div class="profile">
+
+<img src="photo.jpg" alt="Esayies A. Wassie">
+
+</div>
+
+</div>
+
+</header>
+
+<!-- ===== ABOUT ===== -->
+
+<section id="about" class="about">
+
+<div class="container">
+
+<h2>About Me</h2>
+
+<div class="about-text">
+
+<p>
+
+I am a Civil and Structural Engineer with an M.Sc. in Structural
+Engineering from Bahir Dar University, Ethiopia.
+
+</p>
+
+<p>
+
+My research focuses on the integration of artificial intelligence
+and advanced computational methods with structural engineering.
+
+</p>
+
+<p>
+
+I am particularly interested in explainable artificial intelligence
+for engineering applications, where machine-learning predictions
+are not only accurate but also interpretable and meaningful from
+an engineering perspective.
+
+</p>
+
+<p>
+
+My broader research interests include structural health monitoring,
+damage assessment, bridge engineering, physics-informed artificial
+intelligence, uncertainty-aware machine learning, digital twins,
+and resilient infrastructure.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== RESEARCH ===== -->
+
+<section id="research">
+
+<div class="container">
+
+<h2>Research Interests</h2>
+
+<div class="research-grid">
+
+<div class="card">
+
+<h3>Explainable AI</h3>
+
+<p>
+
+Developing interpretable machine-learning models for structural
+engineering using SHAP, LIME, partial dependence plots and
+feature-importance analysis.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Structural Health Monitoring</h3>
+
+<p>
+
+AI-based structural condition assessment, damage detection,
+monitoring and predictive maintenance of civil infrastructure.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Bridge Engineering</h3>
+
+<p>
+
+Data-driven approaches for bridge assessment, structural safety,
+maintenance and infrastructure management.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Machine Learning</h3>
+
+<p>
+
+Application of regression, ensemble learning and advanced
+machine-learning algorithms to structural engineering problems.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Physics-Informed AI</h3>
+
+<p>
+
+Combining physical engineering knowledge with machine learning
+to develop meaningful and reliable engineering models.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Resilient Infrastructure</h3>
+
+<p>
+
+Developing computational approaches for safer and more resilient
+civil infrastructure under changing environmental and operational
+conditions.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== RESEARCH EXPERIENCE ===== -->
+
+<section id="experience" class="experience">
+
+<div class="container">
+
+<h2>Research Experience</h2>
+
+<div class="experience-box">
+
+<div class="experience-item">
+
+<h3>
+M.Sc. Research — Explainable Machine Learning for SFRC Beams
+</h3>
+
+<div class="date">
+Structural Engineering & Artificial Intelligence
+</div>
+
+<p>
+
+Developed a machine-learning framework for predicting the shear
+strength of steel fiber-reinforced concrete (SFRC) beams without
+transverse reinforcement.
+
+</p>
+
+</div>
+
+<div class="experience-item">
+
+<h3>
+Experimental Database Development
+</h3>
+
+<div class="date">
+450 Experimental Records
+</div>
+
+<p>
+
+Compiled and analyzed an experimental database containing 450
+SFRC beam records with eight engineering input parameters,
+including beam geometry, reinforcement, concrete strength,
+shear span ratio and steel fiber characteristics.
+
+</p>
+
+</div>
+
+<div class="experience-item">
+
+<h3>
+Machine Learning Model Development
+</h3>
+
+<div class="date">
+LR · SVM · DT · KNN · RF · AdaBoost · GB · XGBoost
+</div>
+
+<p>
+
+Investigated multiple machine-learning algorithms for predicting
+beam shear strength and evaluated their predictive performance
+using appropriate statistical metrics and validation procedures.
+
+</p>
+
+</div>
+
+<div class="experience-item">
+
+<h3>
+Explainable Artificial Intelligence
+</h3>
+
+<div class="date">
+SHAP · LIME · PDP · Feature Importance
+</div>
+
+<p>
+
+Applied explainable AI techniques to investigate how structural
+and material parameters influence model predictions and to improve
+the transparency of machine-learning-based engineering models.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== THESIS ===== -->
+
+<section id="thesis">
+
+<div class="container">
+
+<h2>M.Sc. Thesis</h2>
+
+<div class="thesis-box">
+
+<h3>
+
+Explainable Machine Learning Framework for Predicting the Shear
+Strength of Steel Fiber-Reinforced Concrete Beams Without
+Transverse Reinforcement
+
+</h3>
+
+<p>
+
+The study developed and evaluated machine-learning models for
+predicting the shear capacity of SFRC beams and investigated
+model interpretability using explainable AI techniques.
+
+</p>
+
+<br>
+
+<strong>Dataset:</strong> 450 experimental records
+
+<br><br>
+
+<strong>Input parameters:</strong>
+
+<ul>
+
+<li>Beam depth</li>
+<li>Beam width</li>
+<li>Longitudinal reinforcement ratio</li>
+<li>Reinforcement strength</li>
+<li>Shear span-to-depth ratio</li>
+<li>Concrete compressive strength</li>
+<li>Steel fiber volume percentage</li>
+<li>Steel fiber factor</li>
+
+</ul>
+
+<strong>Machine-learning models:</strong>
+
+<p>
+
+Linear Regression, SVM, Decision Tree, KNN, Random Forest,
+AdaBoost, Gradient Boosting and XGBoost.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== WEB APPLICATION ===== -->
+
+<section id="projects" class="webapp">
+
+<div class="container">
+
+<h2>Research Web Application</h2>
+
+<div class="app">
+
+<h3>
+SFRC Beam Shear Capacity Prediction
+</h3>
+
+<p>
+
+An interactive web application developed from my research for
+predicting the shear capacity of steel fiber-reinforced concrete
+beams without transverse reinforcement.
+
+</p>
+
+<p>
+
+The application translates the machine-learning research into
+a practical engineering interface where users can enter structural
+parameters and obtain a model-based prediction.
+
+</p>
+
+<a class="app-button"
+href="YOUR_WEB_APP_LINK"
+target="_blank">
+
+Open Web App
+
+</a>
+
+<a class="app-button"
+href="https://github.com/esuu5104/Supplementary-Materials"
+target="_blank">
+
+GitHub Repository
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== PUBLICATIONS ===== -->
+
+<section id="publications">
+
+<div class="container">
+
+<h2>Publications</h2>
+
+<div class="publication">
+
+<h3>
+
+Advancing shear behavior prediction in SFRC beams using
+explainable machine learning
+
+</h3>
+
+<p>
+<strong>Journal:</strong> Discover Civil Engineering
+</p>
+
+<p>
+
+Research investigating machine-learning approaches for predicting
+the shear behavior of steel fiber-reinforced concrete beams.
+
+</p>
+
+<a href="https://doi.org/10.1007/s44290-026-00404-2"
+target="_blank">
+
+View Publication →
+
+</a>
+
+</div>
+
+<div class="publication">
+
+<h3>
+
+Explainable Machine Learning Framework for Predicting the Shear
+Strength of Steel Fiber-Reinforced Concrete Beams Without
+Transverse Reinforcement
+
+</h3>
+
+<p>
+<strong>Status:</strong> Manuscript under revision
+</p>
+
+<p>
+
+The research presents an explainable machine-learning framework
+for structural engineering applications using XGBoost and
+interpretability techniques.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== EDUCATION ===== -->
+
+<section>
+
+<div class="container">
+
+<h2>Education</h2>
+
+<div class="education-grid">
+
+<div class="education-card">
+
+<h3>
+M.Sc. Structural Engineering
+</h3>
+
+<p>
+Bahir Dar University
+</p>
+
+<p>
+2022 – 2025
+</p>
+
+<p>
+<strong>CGPA:</strong> 3.84 / 4.00
+</p>
+
+</div>
+
+<div class="education-card">
+
+<h3>
+B.Sc. Civil Engineering
+</h3>
+
+<p>
+Bahir Dar University
+</p>
+
+<p>
+2017 – 2022
+</p>
+
+<p>
+<strong>CGPA:</strong> 3.64 / 4.00
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== TECHNICAL SKILLS ===== -->
+
+<section>
+
+<div class="container">
+
+<h2>Technical Skills</h2>
+
+<div class="skills">
+
+<span class="skill">Python</span> <span class="skill">Machine Learning</span> <span class="skill">Explainable AI</span> <span class="skill">SHAP</span> <span class="skill">LIME</span> <span class="skill">Pandas</span> <span class="skill">Scikit-learn</span> <span class="skill">ETABS</span> <span class="skill">SAP2000</span> <span class="skill">SAFE</span> <span class="skill">AutoCAD</span> <span class="skill">MS Project</span>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== CONTACT ===== -->
+
+<section id="contact" class="contact">
+
+<div class="container">
+
+<h2>Contact</h2>
+
+<p>
+
+I am interested in research collaboration, doctoral opportunities,
+and applications of artificial intelligence in structural engineering.
+
+</p>
+
+<p>
+
+Email:
+
+<a href="mailto:esayasalemneh@gmail.com">
+
+[esayasalemneh@gmail.com](mailto:esayasalemneh@gmail.com)
+
+</a>
+
+</p>
+
+<p>
+
+Phone:
+
++251 962 260 503
+
+</p>
+
+<p>
+
+GitHub:
+
+<a href="https://github.com/esuu5104"
+target="_blank">
+
+github.com/esuu5104
+
+</a>
+
+</p>
+
+<p>
+
+LinkedIn:
+
+<a href="https://www.linkedin.com/in/esayasawassie/"
+target="_blank">
+
+linkedin.com/in/esayasawassie
+
+</a>
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+
+<p>
+© 2026 Esayies A. Wassie
+</p>
+
+<p>
+Civil & Structural Engineering | Artificial Intelligence for Infrastructure
+</p>
+
+</footer>
+
+</body>
+
+</html>
