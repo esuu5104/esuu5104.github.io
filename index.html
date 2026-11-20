@@ -1,1087 +1,371 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Esayies A. Wassie | Structural Engineering Researcher</title>
-
-<style>
-
-/* ===== GENERAL ===== */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.7;
-    color: #263238;
-    background: #f5f7fa;
-}
-
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-}
-
-section {
-    padding: 80px 0;
-}
-
-h2 {
-    font-size: 35px;
-    text-align: center;
-    margin-bottom: 45px;
-    color: #123b5d;
-}
-
-a {
-    text-decoration: none;
-}
-
-
-/* ===== NAVIGATION ===== */
-
-nav {
-    background: #123b5d;
-    padding: 18px 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    color: white;
-    font-size: 21px;
-    font-weight: bold;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 25px;
-}
-
-nav a {
-    color: white;
-    font-size: 15px;
-}
-
-nav a:hover {
-    color: #8fd3ff;
-}
-
-
-/* ===== HERO ===== */
-
-.hero {
-    background: linear-gradient(135deg, #123b5d, #1976b8);
-    color: white;
-    padding: 100px 0;
-}
-
-.hero-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-}
-
-.hero-text {
-    flex: 1;
-}
-
-.hero-text small {
-    letter-spacing: 2px;
-    font-weight: bold;
-    color: #b9e5ff;
-}
-
-.hero h1 {
-    font-size: 55px;
-    margin: 15px 0;
-}
-
-.hero h3 {
-    font-size: 25px;
-    font-weight: normal;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 18px;
-    max-width: 700px;
-}
-
-.hero-buttons {
-    margin-top: 30px;
-}
-
-.button {
-    display: inline-block;
-    padding: 12px 24px;
-    margin-right: 10px;
-    border-radius: 6px;
-    background: white;
-    color: #123b5d;
-    font-weight: bold;
-}
-
-.button:hover {
-    background: #e8f4fb;
-}
-
-
-/* ===== PROFILE PHOTO ===== */
-
-.profile {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 6px solid rgba(255,255,255,0.5);
-    flex-shrink: 0;
-}
-
-.profile img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-
-/* ===== ABOUT ===== */
-
-.about {
-    background: white;
-}
-
-.about-text {
-    max-width: 900px;
-    margin: auto;
-    font-size: 17px;
-}
-
-.about-text p {
-    margin-bottom: 20px;
-}
-
-
-/* ===== RESEARCH ===== */
-
-.research-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.card {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-6px);
-}
-
-.card h3 {
-    color: #123b5d;
-    margin-bottom: 15px;
-}
-
-
-/* ===== EXPERIENCE ===== */
-
-.experience {
-    background: white;
-}
-
-.experience-box {
-    max-width: 900px;
-    margin: auto;
-}
-
-.experience-item {
-    border-left: 5px solid #1976b8;
-    padding: 25px;
-    margin-bottom: 25px;
-    background: #f5f7fa;
-}
-
-.experience-item h3 {
-    color: #123b5d;
-}
-
-.experience-item .date {
-    color: #1976b8;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-
-/* ===== THESIS ===== */
-
-.thesis-box {
-    max-width: 950px;
-    margin: auto;
-    background: white;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-}
-
-.thesis-box h3 {
-    color: #123b5d;
-    font-size: 23px;
-    margin-bottom: 20px;
-}
-
-.thesis-box ul {
-    margin: 15px 0 15px 25px;
-}
-
-
-/* ===== WEB APP ===== */
-
-.webapp {
-    background: #eaf4fb;
-}
-
-.app {
-    max-width: 850px;
-    margin: auto;
-    text-align: center;
-    background: white;
-    padding: 45px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-}
-
-.app h3 {
-    font-size: 28px;
-    color: #123b5d;
-    margin-bottom: 15px;
-}
-
-.app-button {
-    display: inline-block;
-    margin-top: 25px;
-    margin-right: 10px;
-    padding: 13px 25px;
-    background: #1976b8;
-    color: white;
-    border-radius: 6px;
-    font-weight: bold;
-}
-
-.app-button:hover {
-    background: #123b5d;
-}
-
-
-/* ===== PUBLICATIONS ===== */
-
-.publication {
-    background: white;
-    padding: 30px;
-    margin-bottom: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
-}
-
-.publication h3 {
-    color: #123b5d;
-    margin-bottom: 12px;
-}
-
-.publication a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #1976b8;
-    font-weight: bold;
-}
-
-
-/* ===== EDUCATION ===== */
-
-.education-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-}
-
-.education-card {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
-}
-
-.education-card h3 {
-    color: #123b5d;
-    margin-bottom: 10px;
-}
-
-
-/* ===== SKILLS ===== */
-
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-}
-
-.skill {
-    background: white;
-    padding: 10px 18px;
-    border-radius: 20px;
-    border: 1px solid #d6dce2;
-}
-
-
-/* ===== CONTACT ===== */
-
-.contact {
-    background: #123b5d;
-    color: white;
-    text-align: center;
-}
-
-.contact h2 {
-    color: white;
-}
-
-.contact p {
-    margin: 10px;
-}
-
-.contact a {
-    color: #9edcff;
-}
-
-
-/* ===== FOOTER ===== */
-
-footer {
-    background: #0a263c;
-    color: white;
-    text-align: center;
-    padding: 25px;
-}
-
-
-/* ===== MOBILE ===== */
-
-@media (max-width: 800px) {
-
-    .nav-container {
-        flex-direction: column;
-        gap: 15px;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Esayies A. Wassie — Civil and Structural Engineer researching explainable AI, machine learning, and resilient infrastructure.">
+  <meta name="author" content="Esayies A. Wassie">
+  <meta name="theme-color" content="#101f35">
+  <title>Esayies A. Wassie | Structural Engineering & AI Research</title>
+  <style>
+    :root {
+      --ink: #24213a;
+      --muted: #706b82;
+      --navy: #211b3a;
+      --navy-2: #34265a;
+      --blue: #7652d6;
+      --cyan: #ff9278;
+      --paper: #f7f5fb;
+      --white: #fff;
+      --line: #e8e1f0;
+      --shadow: 0 16px 45px rgba(43, 29, 75, .09);
+      --radius: 16px;
+      --width: 1120px;
     }
-
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+    body { font-family: Cambria, Georgia, serif; color: var(--ink); background: var(--paper); line-height: 1.75; }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(var(--width), calc(100% - 48px)); margin: 0 auto; }
+    .topbar { position: sticky; top: 0; z-index: 20; background: rgba(33,27,58,.96); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,.09); }
+    .nav { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { color: white; font: 800 17px Cambria, Georgia, serif; letter-spacing: -.4px; white-space: nowrap; }
+    .brand span { color: var(--cyan); }
+    .nav-links { display: flex; align-items: center; gap: 25px; list-style: none; }
+    .nav-links a { color: #dce6f2; font-size: 13px; font-weight: 600; }
+    .nav-links a:hover { color: var(--cyan); text-decoration: none; }
+    .hero { color: white; background: radial-gradient(circle at 85% 15%, rgba(255,146,120,.20), transparent 28%), linear-gradient(120deg, #211b3a 0%, #38265d 58%, #65408a 100%); padding: 94px 0 112px; }
+    .hero-inner { display: grid; grid-template-columns: 1fr 250px; align-items: center; gap: 70px; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; color: #ffc0ad; text-transform: uppercase; letter-spacing: 2px; font-size: 11px; font-weight: 700; margin-bottom: 18px; }
+    .eyebrow:before { content: ""; width: 28px; height: 1px; background: var(--cyan); }
+    h1, h2, h3 { font-family: Cambria, Georgia, serif; line-height: 1.25; }
+    .hero h1 { font-size: clamp(38px, 5vw, 58px); letter-spacing: -2px; margin-bottom: 13px; }
+    .hero h2 { color: #c9d8e8; font-size: clamp(17px, 2vw, 21px); font-weight: 500; margin-bottom: 22px; }
+    .hero p { color: #d6e1ec; max-width: 720px; font-size: 16px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 11px 19px; border-radius: 7px; font-weight: 700; font-size: 13px; transition: .2s ease; }
+    .btn-primary { background: var(--cyan); color: #10243a; }
+    .btn-primary:hover { background: #8ad9e8; text-decoration: none; transform: translateY(-2px); }
+    .btn-outline { border: 1px solid rgba(255,255,255,.38); color: white; }
+    .btn-outline:hover { border-color: var(--cyan); color: var(--cyan); text-decoration: none; }
+    .portrait { width: 230px; height: 270px; border-radius: 18px; overflow: hidden; border: 1px solid rgba(255,255,255,.25); box-shadow: 0 20px 55px rgba(0,0,0,.25); background: #46345f; }
+    .portrait img { width: 100%; height: 100%; object-fit: cover; }
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 13px; overflow: hidden; margin-top: -42px; position: relative; box-shadow: var(--shadow); }
+    .stat { background: white; padding: 22px 15px; text-align: center; }
+    .stat strong { display: block; color: var(--navy); font: 800 29px Cambria, Georgia, serif; letter-spacing: -1px; }
+    .stat span { color: var(--muted); font-size: 12px; font-weight: 600; }
+    main section { padding: 78px 0 0; }
+    .section-head { margin-bottom: 28px; }
+    .kicker { color: var(--blue); text-transform: uppercase; letter-spacing: 1.8px; font-size: 10px; font-weight: 800; margin-bottom: 8px; }
+    .section-title { font-size: 30px; letter-spacing: -.8px; color: var(--navy); }
+    .section-head { position: relative; }
+    .section-head:after { content: ''; display: block; width: 54px; height: 3px; border-radius: 4px; margin-top: 14px; background: linear-gradient(90deg, var(--blue), var(--cyan)); }
+    .section-intro { color: var(--muted); max-width: 760px; margin-top: 10px; font-size: 14px; }
+    .about-grid { display: grid; grid-template-columns: 1.4fr .8fr; gap: 26px; }
+    .panel, .card, .publication, .education-card, .skill { background: white; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 7px 24px rgba(16,31,53,.035); }
+    .panel { padding: 28px; }
+    .panel p + p { margin-top: 14px; }
+    .focus-list { padding: 26px; background: #f0eafa; border: 1px solid #e5d9f2; border-radius: var(--radius); }
+    .focus-list h3 { font-size: 16px; margin-bottom: 12px; color: var(--navy); }
+    .focus-list ul { padding-left: 18px; color: #625873; font-size: 13px; }
+    .focus-list li + li { margin-top: 7px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 17px; }
+    .card { padding: 24px; transition: transform .2s ease, box-shadow .2s ease; }
+    .card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+    .card-mark { width: 34px; height: 3px; border-radius: 4px; background: linear-gradient(90deg, var(--blue), var(--cyan)); margin-bottom: 17px; }
+    .card h3 { color: var(--navy); font-size: 16px; margin-bottom: 9px; }
+    .card p { color: var(--muted); font-size: 13px; }
+    .feature { background: var(--navy); color: white; padding: 34px; border-radius: var(--radius); position: relative; overflow: hidden; }
+    .feature:after { content: ""; position: absolute; width: 240px; height: 240px; border: 1px solid rgba(255,146,120,.24); border-radius: 50%; right: -80px; top: -110px; box-shadow: 0 0 0 25px rgba(255,146,120,.04), 0 0 0 50px rgba(255,146,120,.025); }
+    .feature .kicker { color: var(--cyan); }
+    .feature h3 { font-size: 23px; max-width: 780px; margin-bottom: 14px; position: relative; z-index: 1; }
+    .feature p { color: #c9d7e6; max-width: 800px; font-size: 14px; position: relative; z-index: 1; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; position: relative; z-index: 1; }
+    .tag { border: 1px solid rgba(255,183,163,.34); color: #ffd1c4; background: rgba(255,146,120,.10); padding: 5px 10px; border-radius: 30px; font-size: 11px; }
+    .method-grid { margin-top: 18px; }
+    .timeline { border-left: 2px solid #d7e3ed; margin-left: 8px; padding-left: 28px; }
+    .timeline-item { position: relative; padding: 0 0 27px; }
+    .timeline-item:before { content: ""; position: absolute; left: -35px; top: 7px; width: 11px; height: 11px; border-radius: 50%; background: var(--blue); border: 3px solid var(--paper); box-shadow: 0 0 0 1px #b7cde0; }
+    .timeline-item h3 { color: var(--navy); font-size: 17px; }
+    .date { color: var(--blue); font-size: 11px; font-weight: 700; margin: 5px 0 7px; }
+    .timeline-item p { color: var(--muted); font-size: 13px; max-width: 780px; }
+    .publication { padding: 25px 27px; margin-bottom: 15px; border-left: 4px solid var(--blue); background-image: linear-gradient(110deg, rgba(118,82,214,.035), transparent 55%); }
+    .pub-top { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 9px; }
+    .status { color: #6843a5; background: #f0eafa; border: 1px solid #ded1f0; border-radius: 30px; padding: 4px 9px; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .6px; }
+    .publication h3 { color: var(--navy); font-size: 17px; margin-bottom: 9px; max-width: 900px; }
+    .publication p { color: var(--muted); font-size: 13px; }
+    .doi { display: inline-block; margin-top: 8px; font-size: 12px; font-weight: 700; }
+    .edu-grid, .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .education-card, .skill { padding: 24px; }
+    .education-card h3, .skill h3 { color: var(--navy); font-size: 16px; margin-bottom: 7px; }
+    .education-card p, .skill p { color: var(--muted); font-size: 13px; }
+    .education-card .date { margin-bottom: 8px; }
+    .skills-grid { grid-template-columns: repeat(3, 1fr); }
+    .contact { background: linear-gradient(120deg, #211b3a, #65408a); color: white; border-radius: 18px; padding: 42px; text-align: center; margin: 78px 0 60px; }
+    .contact h2 { color: white; font-size: 28px; margin-bottom: 10px; }
+    .contact p { color: #d0dce8; max-width: 680px; margin: 0 auto; font-size: 14px; }
+    .contact-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 11px; margin-top: 23px; }
+    .contact-links a { color: white; border: 1px solid rgba(255,255,255,.28); border-radius: 7px; padding: 9px 15px; font-size: 12px; font-weight: 700; }
+    .contact-links a:hover { color: var(--cyan); border-color: var(--cyan); text-decoration: none; }
+    footer { background: #19142d; color: #9eafc2; padding: 23px 0; text-align: center; font-size: 11px; }
+    footer strong { color: white; }
+    @media (max-width: 850px) {
+      .nav { padding: 14px 0; align-items: flex-start; flex-direction: column; gap: 10px; }
+      .nav-links { gap: 15px; flex-wrap: wrap; }
+      .hero-inner { grid-template-columns: 1fr 190px; gap: 30px; }
+      .portrait { width: 190px; height: 225px; }
+      .grid-3 { grid-template-columns: repeat(2, 1fr); }
+      .skills-grid { grid-template-columns: repeat(2, 1fr); }
     }
-
-    .hero-content {
-        flex-direction: column-reverse;
-        text-align: center;
+    @media (max-width: 600px) {
+      .wrap { width: min(100% - 32px, var(--width)); }
+      .hero { padding: 60px 0 85px; }
+      .hero-inner { grid-template-columns: 1fr; text-align: center; }
+      .hero .eyebrow { justify-content: center; }
+      .portrait { grid-row: 1; margin: 0 auto; width: 165px; height: 190px; }
+      .hero-actions { justify-content: center; }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      main section { padding-top: 58px; }
+      .about-grid, .grid-3, .edu-grid, .skills-grid { grid-template-columns: 1fr; }
+      .section-title { font-size: 26px; }
+      .feature { padding: 25px; }
+      .feature h3 { font-size: 20px; }
+      .contact { padding: 30px 20px; margin-top: 58px; }
+      .nav-links { gap: 10px 14px; }
+      .nav-links a { font-size: 12px; }
     }
-
-    .hero h1 {
-        font-size: 40px;
-    }
-
-    .research-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .education-grid {
-        grid-template-columns: 1fr;
-    }
-
-}
-
-</style>
-
+  </style>
 </head>
-
 <body>
-
-<!-- ===== NAVIGATION ===== -->
-
-<nav>
-
-<div class="container nav-container">
-
-<div class="logo">
-Esayies A. Wassie
-</div>
-
-<ul>
-
-<li><a href="#about">About</a></li>
-
-<li><a href="#research">Research</a></li>
-
-<li><a href="#experience">Experience</a></li>
-
-<li><a href="#projects">Projects</a></li>
-
-<li><a href="#publications">Publications</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-</div>
-
-</nav>
-
-<!-- ===== HERO ===== -->
-
-<header class="hero">
-
-<div class="container hero-content">
-
-<div class="hero-text">
-
-<small>CIVIL & STRUCTURAL ENGINEER</small>
-
-<h1>Esayies A. Wassie</h1>
-
-<h3>Structural Engineering Researcher</h3>
-
-<p>
-
-Integrating artificial intelligence, explainable machine learning,
-and structural engineering to develop data-driven approaches for
-safe, resilient, and intelligent civil infrastructure.
-
-</p>
-
-<div class="hero-buttons">
-
-<a class="button" href="#research">
-My Research
-</a>
-
-<a class="button" href="#publications">
-Publications
-</a>
-
-</div>
-
-</div>
-
-<!-- PROFILE PHOTO -->
-
-<div class="profile">
-
-<img src="photo.jpg" alt="Esayies A. Wassie">
-
-</div>
-
-</div>
-
-</header>
-
-<!-- ===== ABOUT ===== -->
-
-<section id="about" class="about">
-
-<div class="container">
-
-<h2>About Me</h2>
-
-<div class="about-text">
-
-<p>
-
-I am a Civil and Structural Engineer with an M.Sc. in Structural
-Engineering from Bahir Dar University, Ethiopia.
-
-</p>
-
-<p>
-
-My research focuses on the integration of artificial intelligence
-and advanced computational methods with structural engineering.
-
-</p>
-
-<p>
-
-I am particularly interested in explainable artificial intelligence
-for engineering applications, where machine-learning predictions
-are not only accurate but also interpretable and meaningful from
-an engineering perspective.
-
-</p>
-
-<p>
-
-My broader research interests include structural health monitoring,
-damage assessment, bridge engineering, physics-informed artificial
-intelligence, uncertainty-aware machine learning, digital twins,
-and resilient infrastructure.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===== RESEARCH ===== -->
-
-<section id="research">
-
-<div class="container">
-
-<h2>Research Interests</h2>
-
-<div class="research-grid">
-
-<div class="card">
-
-<h3>Explainable AI</h3>
-
-<p>
-
-Developing interpretable machine-learning models for structural
-engineering using SHAP, LIME, partial dependence plots and
-feature-importance analysis.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Structural Health Monitoring</h3>
-
-<p>
-
-AI-based structural condition assessment, damage detection,
-monitoring and predictive maintenance of civil infrastructure.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Bridge Engineering</h3>
-
-<p>
-
-Data-driven approaches for bridge assessment, structural safety,
-maintenance and infrastructure management.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Machine Learning</h3>
-
-<p>
-
-Application of regression, ensemble learning and advanced
-machine-learning algorithms to structural engineering problems.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Physics-Informed AI</h3>
-
-<p>
-
-Combining physical engineering knowledge with machine learning
-to develop meaningful and reliable engineering models.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Resilient Infrastructure</h3>
-
-<p>
-
-Developing computational approaches for safer and more resilient
-civil infrastructure under changing environmental and operational
-conditions.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===== RESEARCH EXPERIENCE ===== -->
-
-<section id="experience" class="experience">
-
-<div class="container">
-
-<h2>Research Experience</h2>
-
-<div class="experience-box">
-
-<div class="experience-item">
-
-<h3>
-M.Sc. Research — Explainable Machine Learning for SFRC Beams
-</h3>
-
-<div class="date">
-Structural Engineering & Artificial Intelligence
-</div>
-
-<p>
-
-Developed a machine-learning framework for predicting the shear
-strength of steel fiber-reinforced concrete (SFRC) beams without
-transverse reinforcement.
-
-</p>
-
-</div>
-
-<div class="experience-item">
-
-<h3>
-Experimental Database Development
-</h3>
-
-<div class="date">
-450 Experimental Records
-</div>
-
-<p>
-
-Compiled and analyzed an experimental database containing 450
-SFRC beam records with eight engineering input parameters,
-including beam geometry, reinforcement, concrete strength,
-shear span ratio and steel fiber characteristics.
-
-</p>
-
-</div>
-
-<div class="experience-item">
-
-<h3>
-Machine Learning Model Development
-</h3>
-
-<div class="date">
-LR · SVM · DT · KNN · RF · AdaBoost · GB · XGBoost
-</div>
-
-<p>
-
-Investigated multiple machine-learning algorithms for predicting
-beam shear strength and evaluated their predictive performance
-using appropriate statistical metrics and validation procedures.
-
-</p>
-
-</div>
-
-<div class="experience-item">
-
-<h3>
-Explainable Artificial Intelligence
-</h3>
-
-<div class="date">
-SHAP · LIME · PDP · Feature Importance
-</div>
-
-<p>
-
-Applied explainable AI techniques to investigate how structural
-and material parameters influence model predictions and to improve
-the transparency of machine-learning-based engineering models.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===== THESIS ===== -->
-
-<section id="thesis">
-
-<div class="container">
-
-<h2>M.Sc. Thesis</h2>
-
-<div class="thesis-box">
-
-<h3>
-
-Explainable Machine Learning Framework for Predicting the Shear
-Strength of Steel Fiber-Reinforced Concrete Beams Without
-Transverse Reinforcement
-
-</h3>
-
-<p>
-
-The study developed and evaluated machine-learning models for
-predicting the shear capacity of SFRC beams and investigated
-model interpretability using explainable AI techniques.
-
-</p>
-
-<br>
-
-<strong>Dataset:</strong> 450 experimental records
-
-<br><br>
-
-<strong>Input parameters:</strong>
-
-<ul>
-
-<li>Beam depth</li>
-<li>Beam width</li>
-<li>Longitudinal reinforcement ratio</li>
-<li>Reinforcement strength</li>
-<li>Shear span-to-depth ratio</li>
-<li>Concrete compressive strength</li>
-<li>Steel fiber volume percentage</li>
-<li>Steel fiber factor</li>
-
-</ul>
-
-<strong>Machine-learning models:</strong>
-
-<p>
-
-Linear Regression, SVM, Decision Tree, KNN, Random Forest,
-AdaBoost, Gradient Boosting and XGBoost.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===== WEB APPLICATION ===== -->
-
-<section id="projects" class="webapp">
-
-<div class="container">
-
-<h2>Research Web Application</h2>
-
-<div class="app">
-
-<h3>
-SFRC Beam Shear Capacity Prediction
-</h3>
-
-<p>
-
-An interactive web application developed from my research for
-predicting the shear capacity of steel fiber-reinforced concrete
-beams without transverse reinforcement.
-
-</p>
-
-<p>
-
-The application translates the machine-learning research into
-a practical engineering interface where users can enter structural
-parameters and obtain a model-based prediction.
-
-</p>
-
-<a class="app-button"
-href="YOUR_WEB_APP_LINK"
-target="_blank">
-
-Open Web App
-
-</a>
-
-<a class="app-button"
-href="https://github.com/esuu5104/Supplementary-Materials"
-target="_blank">
-
-GitHub Repository
-
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===== PUBLICATIONS ===== -->
-
-<section id="publications">
-
-<div class="container">
-
-<h2>Publications</h2>
-
-<div class="publication">
-
-<h3>
-
-Advancing shear behavior prediction in SFRC beams using
-explainable machine learning
-
-</h3>
-
-<p>
-<strong>Journal:</strong> Discover Civil Engineering
-</p>
-
-<p>
-
-Research investigating machine-learning approaches for predicting
-the shear behavior of steel fiber-reinforced concrete beams.
-
-</p>
-
-<a href="https://doi.org/10.1007/s44290-026-00404-2"
-target="_blank">
-
-View Publication →
-
-</a>
-
-</div>
-
-<div class="publication">
-
-<h3>
-
-Explainable Machine Learning Framework for Predicting the Shear
-Strength of Steel Fiber-Reinforced Concrete Beams Without
-Transverse Reinforcement
-
-</h3>
-
-<p>
-<strong>Status:</strong> Manuscript under revision
-</p>
-
-<p>
-
-The research presents an explainable machine-learning framework
-for structural engineering applications using XGBoost and
-interpretability techniques.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===== EDUCATION ===== -->
-
-<section>
-
-<div class="container">
-
-<h2>Education</h2>
-
-<div class="education-grid">
-
-<div class="education-card">
-
-<h3>
-M.Sc. Structural Engineering
-</h3>
-
-<p>
-Bahir Dar University
-</p>
-
-<p>
-2022 – 2025
-</p>
-
-<p>
-<strong>CGPA:</strong> 3.84 / 4.00
-</p>
-
-</div>
-
-<div class="education-card">
-
-<h3>
-B.Sc. Civil Engineering
-</h3>
-
-<p>
-Bahir Dar University
-</p>
-
-<p>
-2017 – 2022
-</p>
-
-<p>
-<strong>CGPA:</strong> 3.64 / 4.00
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===== TECHNICAL SKILLS ===== -->
-
-<section>
-
-<div class="container">
-
-<h2>Technical Skills</h2>
-
-<div class="skills">
-
-<span class="skill">Python</span> <span class="skill">Machine Learning</span> <span class="skill">Explainable AI</span> <span class="skill">SHAP</span> <span class="skill">LIME</span> <span class="skill">Pandas</span> <span class="skill">Scikit-learn</span> <span class="skill">ETABS</span> <span class="skill">SAP2000</span> <span class="skill">SAFE</span> <span class="skill">AutoCAD</span> <span class="skill">MS Project</span>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===== CONTACT ===== -->
-
-<section id="contact" class="contact">
-
-<div class="container">
-
-<h2>Contact</h2>
-
-<p>
-
-I am interested in research collaboration, doctoral opportunities,
-and applications of artificial intelligence in structural engineering.
-
-</p>
-
-<p>
-
-Email:
-
-<a href="mailto:esayasalemneh@gmail.com">
-
-[esayasalemneh@gmail.com](mailto:esayasalemneh@gmail.com)
-
-</a>
-
-</p>
-
-<p>
-
-Phone:
-
-+251 962 260 503
-
-</p>
-
-<p>
-
-GitHub:
-
-<a href="https://github.com/esuu5104"
-target="_blank">
-
-github.com/esuu5104
-
-</a>
-
-</p>
-
-<p>
-
-LinkedIn:
-
-<a href="https://www.linkedin.com/in/esayasawassie/"
-target="_blank">
-
-linkedin.com/in/esayasawassie
-
-</a>
-
-</p>
-
-</div>
-
-</section>
-
-<!-- ===== FOOTER ===== -->
-
-<footer>
-
-<p>
-© 2026 Esayies A. Wassie
-</p>
-
-<p>
-Civil & Structural Engineering | Artificial Intelligence for Infrastructure
-</p>
-
-</footer>
-
+  <div class="topbar">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#home">ESAYIES <span>A. WASSIE</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <header class="hero" id="home">
+    <div class="hero-inner wrap">
+      <div>
+        <div class="eyebrow">Researcher · Civil & Structural Engineering</div>
+        <h1>Esayies A. Wassie</h1>
+        <h2>M.Sc. Structural Engineering | Explainable AI for Civil Infrastructure</h2>
+        <p>
+          I am a civil and structural engineer working at the intersection of structural engineering,
+          machine learning, and explainable artificial intelligence. My research explores interpretable,
+          data-driven methods for understanding structural behaviour and supporting safer, more resilient infrastructure.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#publications">Explore my research</a>
+          <a class="btn btn-outline" href="https://www.linkedin.com/in/esayasawassie/" target="_blank" rel="noopener">LinkedIn profile</a>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="photo.jpg" alt="Portrait of Esayies A. Wassie">
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="stats" aria-label="Research highlights">
+      <div class="stat"><strong>2</strong><span>Peer-reviewed publications</span></div>
+      <div class="stat"><strong>450+</strong><span>Experimental beam records</span></div>
+      <div class="stat"><strong>8</strong><span>Machine-learning models evaluated</span></div>
+      <div class="stat"><strong>4</strong><span>Explainability approaches</span></div>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <section id="about">
+      <div class="section-head">
+        <div class="kicker">Profile</div>
+        <h2 class="section-title">About me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="panel">
+          <p>
+            I hold an M.Sc. in Structural Engineering from Bahir Dar University, Ethiopia. My academic
+            and research work combines structural engineering principles with computational approaches
+            to develop transparent and practically meaningful solutions to civil engineering problems.
+          </p>
+          <p>
+            My published research applies explainable machine learning to the prediction of shear strength
+            in steel fiber-reinforced concrete (SFRC) beams without transverse reinforcement. I am interested
+            in extending this work toward intelligent structural assessment, bridge engineering, and resilient infrastructure.
+          </p>
+        </div>
+        <aside class="focus-list">
+          <h3>Current research directions</h3>
+          <ul>
+            <li>Explainable and trustworthy artificial intelligence</li>
+            <li>Data-driven structural assessment and damage detection</li>
+            <li>Bridge engineering and structural health monitoring</li>
+            <li>Physics-informed and uncertainty-aware machine learning</li>
+            <li>Digital twins and resilient infrastructure systems</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="section-head">
+        <div class="kicker">Academic interests</div>
+        <h2 class="section-title">Research interests</h2>
+        <p class="section-intro">My work is focused on connecting data-driven methods with engineering knowledge, with an emphasis on interpretability and structural relevance.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card"><div class="card-mark"></div><h3>Explainable AI</h3><p>Interpretable machine-learning methods that help engineers understand model predictions, influential variables, and nonlinear relationships.</p></article>
+        <article class="card"><div class="card-mark"></div><h3>Structural Health Monitoring</h3><p>Data-driven approaches for evaluating structural condition, identifying damage, and supporting infrastructure management.</p></article>
+        <article class="card"><div class="card-mark"></div><h3>Bridge Engineering</h3><p>Structural performance, assessment, resilience, and intelligent monitoring of existing bridges and infrastructure systems.</p></article>
+        <article class="card"><div class="card-mark"></div><h3>Physics-Informed AI</h3><p>Integrating mechanics-based understanding and physical constraints into machine-learning models for engineering applications.</p></article>
+        <article class="card"><div class="card-mark"></div><h3>Resilient Infrastructure</h3><p>Computational approaches to improve the safety, reliability, and resilience of civil infrastructure under challenging conditions.</p></article>
+        <article class="card"><div class="card-mark"></div><h3>Digital Twins</h3><p>Intelligent digital representations for structural evaluation, performance prediction, and maintenance planning.</p></article>
+      </div>
+    </section>
+
+    <section id="featured-research">
+      <div class="section-head">
+        <div class="kicker">Research contribution</div>
+        <h2 class="section-title">Featured research</h2>
+      </div>
+      <div class="feature">
+        <div class="kicker">M.Sc. research · Published work</div>
+        <h3>Explainable machine learning for predicting the shear strength of steel fiber-reinforced concrete beams without transverse reinforcement</h3>
+        <p>
+          This research developed and evaluated machine-learning models to predict the shear capacity
+          of SFRC beams without transverse reinforcement. The study combined predictive modelling with
+          explainability techniques to examine the influence of key structural and material parameters
+          and to interpret model behaviour in an engineering context.
+        </p>
+        <div class="tags">
+          <span class="tag">SFRC</span><span class="tag">XGBoost</span><span class="tag">SHAP</span>
+          <span class="tag">LIME</span><span class="tag">Partial Dependence</span>
+          <span class="tag">Structural Engineering</span><span class="tag">Explainable AI</span>
+        </div>
+      </div>
+      <div class="grid-3 method-grid">
+        <article class="card"><div class="card-mark"></div><h3>Experimental database</h3><p>More than 450 experimental SFRC beam records with eight structural and material input variables.</p></article>
+        <article class="card"><div class="card-mark"></div><h3>Predictive modelling</h3><p>Linear Regression, SVM, Decision Tree, KNN, Random Forest, AdaBoost, Gradient Boosting, and XGBoost.</p></article>
+        <article class="card"><div class="card-mark"></div><h3>Model interpretation</h3><p>SHAP, LIME, partial dependence plots, and feature-importance analysis to interpret model behaviour.</p></article>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="section-head">
+        <div class="kicker">Professional background</div>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Structural Engineering Research</h3>
+          <div class="date">2025 – Present</div>
+          <p>Research in explainable machine learning, structural engineering, steel fiber-reinforced concrete, and AI-assisted infrastructure assessment.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Site / Junior Engineer</h3>
+          <div class="date">2025 – 2026</div>
+          <p>Construction supervision, engineering measurements, drawings, quantity takeoff, BOQ preparation, payment documentation, and site coordination.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Construction Site Supervision</h3>
+          <div class="date">2021</div>
+          <p>Practical experience in construction supervision, engineering drawings, measurements, and site activities.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="section-head">
+        <div class="kicker">Research output</div>
+        <h2 class="section-title">Publications</h2>
+        <p class="section-intro">Peer-reviewed research on explainable machine learning and the structural behaviour of steel fiber-reinforced concrete.</p>
+      </div>
+
+      <article class="publication">
+        <div class="pub-top"><span class="status">Published · 2026</span></div>
+        <h3>Explainable Machine Learning Framework for Predicting the Shear Strength of Steel Fiber-Reinforced Concrete Beams Without Transverse Reinforcement</h3>
+        <p><strong>Next Materials</strong> (2026).</p>
+        <a class="doi" href="https://doi.org/10.1016/j.nxmate.2026.103993" target="_blank" rel="noopener">https://doi.org/10.1016/j.nxmate.2026.103993 ↗</a>
+      </article>
+
+      <article class="publication">
+        <div class="pub-top"><span class="status">Published · 2026</span></div>
+        <h3>Advancing shear behavior prediction in SFRC beams using explainable machine learning</h3>
+        <p><strong>Discover Civil Engineering</strong>, Springer (2026).</p>
+        <a class="doi" href="https://doi.org/10.1007/s44290-026-00404-2" target="_blank" rel="noopener">https://doi.org/10.1007/s44290-026-00404-2 ↗</a>
+      </article>
+    </section>
+
+    <section id="education">
+      <div class="section-head">
+        <div class="kicker">Academic qualifications</div>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="edu-grid">
+        <article class="education-card">
+          <div class="date">2022 – 2025</div>
+          <h3>M.Sc. in Structural Engineering</h3>
+          <p>Bahir Dar University / Bahir Dar Institute of Technology</p>
+          <p><strong>CGPA: 3.84 / 4.00</strong></p>
+        </article>
+        <article class="education-card">
+          <div class="date">2017 – 2022</div>
+          <h3>B.Sc. in Civil Engineering</h3>
+          <p>Bahir Dar University / Bahir Dar Institute of Technology</p>
+          <p><strong>CGPA: 3.64 / 4.00</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-head">
+        <div class="kicker">Technical capabilities</div>
+        <h2 class="section-title">Technical skills</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill"><h3>Programming & AI</h3><p>Python, Pandas, NumPy, Scikit-learn, machine learning, explainable AI, SHAP, and LIME.</p></article>
+        <article class="skill"><h3>Structural Engineering</h3><p>ETABS, SAP2000, SAFE, structural analysis, structural design, and finite element analysis.</p></article>
+        <article class="skill"><h3>Engineering Practice</h3><p>AutoCAD, BOQ preparation, quantity takeoff, construction supervision, MS Project, and payment documentation.</p></article>
+      </div>
+    </section>
+
+    <section id="resources">
+      <div class="section-head">
+        <div class="kicker">Research & professional profiles</div>
+        <h2 class="section-title">Explore my work</h2>
+      </div>
+      <div class="grid-3">
+        <article class="card"><div class="card-mark"></div><h3>Research materials</h3><p>Supplementary materials and resources associated with my research.</p><a class="doi" href="https://github.com/esuu5104/Supplementary-Materials-" target="_blank" rel="noopener">View research repository ↗</a></article>
+        <article class="card"><div class="card-mark"></div><h3>GitHub</h3><p>Code repositories and computational projects.</p><a class="doi" href="https://github.com/esuu5104" target="_blank" rel="noopener">Visit GitHub ↗</a></article>
+        <article class="card"><div class="card-mark"></div><h3>LinkedIn</h3><p>Professional background, updates, and research connections.</p><a class="doi" href="https://www.linkedin.com/in/esayasawassie/" target="_blank" rel="noopener">Connect on LinkedIn ↗</a></article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="kicker">Get in touch</div>
+      <h2>Research collaboration & PhD opportunities</h2>
+      <p>I welcome academic collaboration and discussions related to structural engineering, explainable AI, machine learning, bridge engineering, and resilient infrastructure.</p>
+      <div class="contact-links">
+        <a href="mailto:bdu1500466@bdu.edu.et">Email</a>
+        <a href="https://www.linkedin.com/in/esayasawassie/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/esuu5104" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>© 2026 <strong>Esayies A. Wassie</strong>. All rights reserved.</p>
+      <p>Civil & Structural Engineering · Explainable AI · Resilient Infrastructure</p>
+    </div>
+  </footer>
 </body>
-
 </html>
