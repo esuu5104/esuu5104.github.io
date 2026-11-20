@@ -9,15 +9,15 @@
   <title>Esayies A. Wassie | Structural Engineering & AI Research</title>
   <style>
     :root {
-      --ink: #24213a;
-      --muted: #706b82;
-      --navy: #211b3a;
-      --navy-2: #34265a;
-      --blue: #7652d6;
-      --cyan: #ff9278;
-      --paper: #f7f5fb;
+      --ink: #17263d;
+      --muted: #66758a;
+      --navy: #102746;
+      --navy-2: #173b67;
+      --blue: #2f5f98;
+      --cyan: #8fb3d9;
+      --paper: #ffffff;
       --white: #fff;
-      --line: #e8e1f0;
+      --line: #dce4ed;
       --shadow: 0 16px 45px rgba(43, 29, 75, .09);
       --radius: 16px;
       --width: 1120px;
@@ -28,28 +28,28 @@
     a { color: var(--blue); text-decoration: none; }
     a:hover { text-decoration: underline; }
     .wrap { width: min(var(--width), calc(100% - 48px)); margin: 0 auto; }
-    .topbar { position: sticky; top: 0; z-index: 20; background: rgba(33,27,58,.96); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,.09); }
+    .topbar { position: sticky; top: 0; z-index: 20; background: rgba(16,39,70,.97); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,.09); }
     .nav { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
     .brand { color: white; font: 800 17px Cambria, Georgia, serif; letter-spacing: -.4px; white-space: nowrap; }
     .brand span { color: var(--cyan); }
     .nav-links { display: flex; align-items: center; gap: 25px; list-style: none; }
-    .nav-links a { color: #dce6f2; font-size: 13px; font-weight: 600; }
+    .nav-links a { color: #e3edf7; font-size: 13px; font-weight: 600; }
     .nav-links a:hover { color: var(--cyan); text-decoration: none; }
-    .hero { color: white; background: radial-gradient(circle at 85% 15%, rgba(255,146,120,.20), transparent 28%), linear-gradient(120deg, #211b3a 0%, #38265d 58%, #65408a 100%); padding: 94px 0 112px; }
+    .hero { color: white; background: radial-gradient(circle at 85% 15%, rgba(143,179,217,.18), transparent 28%), linear-gradient(120deg, #102746 0%, #38265d 58%, #65408a 100%); padding: 94px 0 112px; }
     .hero-inner { display: grid; grid-template-columns: 1fr 250px; align-items: center; gap: 70px; }
-    .eyebrow { display: inline-flex; align-items: center; gap: 10px; color: #ffc0ad; text-transform: uppercase; letter-spacing: 2px; font-size: 11px; font-weight: 700; margin-bottom: 18px; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; color: #c7d9ec; text-transform: uppercase; letter-spacing: 2px; font-size: 11px; font-weight: 700; margin-bottom: 18px; }
     .eyebrow:before { content: ""; width: 28px; height: 1px; background: var(--cyan); }
     h1, h2, h3 { font-family: Cambria, Georgia, serif; line-height: 1.25; }
     .hero h1 { font-size: clamp(38px, 5vw, 58px); letter-spacing: -2px; margin-bottom: 13px; }
-    .hero h2 { color: #c9d8e8; font-size: clamp(17px, 2vw, 21px); font-weight: 500; margin-bottom: 22px; }
-    .hero p { color: #d6e1ec; max-width: 720px; font-size: 16px; }
+    .hero h2 { color: #cbd9e8; font-size: clamp(17px, 2vw, 21px); font-weight: 500; margin-bottom: 22px; }
+    .hero p { color: #dce7f2; max-width: 720px; font-size: 16px; }
     .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
     .btn { display: inline-flex; align-items: center; justify-content: center; padding: 11px 19px; border-radius: 7px; font-weight: 700; font-size: 13px; transition: .2s ease; }
     .btn-primary { background: var(--cyan); color: #10243a; }
-    .btn-primary:hover { background: #8ad9e8; text-decoration: none; transform: translateY(-2px); }
+    .btn-primary:hover { background: #c7d9ec; text-decoration: none; transform: translateY(-2px); }
     .btn-outline { border: 1px solid rgba(255,255,255,.38); color: white; }
     .btn-outline:hover { border-color: var(--cyan); color: var(--cyan); text-decoration: none; }
-    .portrait { width: 230px; height: 270px; border-radius: 18px; overflow: hidden; border: 1px solid rgba(255,255,255,.25); box-shadow: 0 20px 55px rgba(0,0,0,.25); background: #46345f; }
+    .portrait { width: 230px; height: 270px; border-radius: 18px; overflow: hidden; border: 1px solid rgba(255,255,255,.25); box-shadow: 0 20px 55px rgba(0,0,0,.25); background: #173b67; }
     .portrait img { width: 100%; height: 100%; object-fit: cover; }
     .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 13px; overflow: hidden; margin-top: -42px; position: relative; box-shadow: var(--shadow); }
     .stat { background: white; padding: 22px 15px; text-align: center; }
@@ -66,9 +66,9 @@
     .panel, .card, .publication, .education-card, .skill { background: white; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 7px 24px rgba(16,31,53,.035); }
     .panel { padding: 28px; }
     .panel p + p { margin-top: 14px; }
-    .focus-list { padding: 26px; background: #f0eafa; border: 1px solid #e5d9f2; border-radius: var(--radius); }
+    .focus-list { padding: 26px; background: #edf3f9; border: 1px solid #d9e5f0; border-radius: var(--radius); }
     .focus-list h3 { font-size: 16px; margin-bottom: 12px; color: var(--navy); }
-    .focus-list ul { padding-left: 18px; color: #625873; font-size: 13px; }
+    .focus-list ul { padding-left: 18px; color: #53657b; font-size: 13px; }
     .focus-list li + li { margin-top: 7px; }
     .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 17px; }
     .card { padding: 24px; transition: transform .2s ease, box-shadow .2s ease; }
@@ -77,22 +77,22 @@
     .card h3 { color: var(--navy); font-size: 16px; margin-bottom: 9px; }
     .card p { color: var(--muted); font-size: 13px; }
     .feature { background: var(--navy); color: white; padding: 34px; border-radius: var(--radius); position: relative; overflow: hidden; }
-    .feature:after { content: ""; position: absolute; width: 240px; height: 240px; border: 1px solid rgba(255,146,120,.24); border-radius: 50%; right: -80px; top: -110px; box-shadow: 0 0 0 25px rgba(255,146,120,.04), 0 0 0 50px rgba(255,146,120,.025); }
+    .feature:after { content: ""; position: absolute; width: 240px; height: 240px; border: 1px solid rgba(143,179,217,.24); border-radius: 50%; right: -80px; top: -110px; box-shadow: 0 0 0 25px rgba(143,179,217,.04), 0 0 0 50px rgba(143,179,217,.025); }
     .feature .kicker { color: var(--cyan); }
     .feature h3 { font-size: 23px; max-width: 780px; margin-bottom: 14px; position: relative; z-index: 1; }
-    .feature p { color: #c9d7e6; max-width: 800px; font-size: 14px; position: relative; z-index: 1; }
+    .feature p { color: #d0deeb; max-width: 800px; font-size: 14px; position: relative; z-index: 1; }
     .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; position: relative; z-index: 1; }
-    .tag { border: 1px solid rgba(255,183,163,.34); color: #ffd1c4; background: rgba(255,146,120,.10); padding: 5px 10px; border-radius: 30px; font-size: 11px; }
+    .tag { border: 1px solid rgba(191,211,232,.34); color: #d7e6f5; background: rgba(143,179,217,.10); padding: 5px 10px; border-radius: 30px; font-size: 11px; }
     .method-grid { margin-top: 18px; }
-    .timeline { border-left: 2px solid #d7e3ed; margin-left: 8px; padding-left: 28px; }
+    .timeline { border-left: 2px solid #d7e2ed; margin-left: 8px; padding-left: 28px; }
     .timeline-item { position: relative; padding: 0 0 27px; }
-    .timeline-item:before { content: ""; position: absolute; left: -35px; top: 7px; width: 11px; height: 11px; border-radius: 50%; background: var(--blue); border: 3px solid var(--paper); box-shadow: 0 0 0 1px #b7cde0; }
+    .timeline-item:before { content: ""; position: absolute; left: -35px; top: 7px; width: 11px; height: 11px; border-radius: 50%; background: var(--blue); border: 3px solid var(--paper); box-shadow: 0 0 0 1px #a9bfd5; }
     .timeline-item h3 { color: var(--navy); font-size: 17px; }
     .date { color: var(--blue); font-size: 11px; font-weight: 700; margin: 5px 0 7px; }
     .timeline-item p { color: var(--muted); font-size: 13px; max-width: 780px; }
-    .publication { padding: 25px 27px; margin-bottom: 15px; border-left: 4px solid var(--blue); background-image: linear-gradient(110deg, rgba(118,82,214,.035), transparent 55%); }
+    .publication { padding: 25px 27px; margin-bottom: 15px; border-left: 4px solid var(--blue); background-image: linear-gradient(110deg, rgba(47,95,152,.045), transparent 55%); }
     .pub-top { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 9px; }
-    .status { color: #6843a5; background: #f0eafa; border: 1px solid #ded1f0; border-radius: 30px; padding: 4px 9px; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .6px; }
+    .status { color: #214d7a; background: #edf3f9; border: 1px solid #d3e0ed; border-radius: 30px; padding: 4px 9px; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .6px; }
     .publication h3 { color: var(--navy); font-size: 17px; margin-bottom: 9px; max-width: 900px; }
     .publication p { color: var(--muted); font-size: 13px; }
     .doi { display: inline-block; margin-top: 8px; font-size: 12px; font-weight: 700; }
@@ -102,13 +102,13 @@
     .education-card p, .skill p { color: var(--muted); font-size: 13px; }
     .education-card .date { margin-bottom: 8px; }
     .skills-grid { grid-template-columns: repeat(3, 1fr); }
-    .contact { background: linear-gradient(120deg, #211b3a, #65408a); color: white; border-radius: 18px; padding: 42px; text-align: center; margin: 78px 0 60px; }
+    .contact { background: linear-gradient(120deg, #102746, #65408a); color: white; border-radius: 18px; padding: 42px; text-align: center; margin: 78px 0 60px; }
     .contact h2 { color: white; font-size: 28px; margin-bottom: 10px; }
-    .contact p { color: #d0dce8; max-width: 680px; margin: 0 auto; font-size: 14px; }
+    .contact p { color: #d5e1ed; max-width: 680px; margin: 0 auto; font-size: 14px; }
     .contact-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 11px; margin-top: 23px; }
-    .contact-links a { color: white; border: 1px solid rgba(255,255,255,.28); border-radius: 7px; padding: 9px 15px; font-size: 12px; font-weight: 700; }
+    .contact-links a { color: white; border: 1px solid rgba(255,255,255,.30); border-radius: 7px; padding: 9px 15px; font-size: 12px; font-weight: 700; }
     .contact-links a:hover { color: var(--cyan); border-color: var(--cyan); text-decoration: none; }
-    footer { background: #19142d; color: #9eafc2; padding: 23px 0; text-align: center; font-size: 11px; }
+    footer { background: #0b1d33; color: #aebed0; padding: 23px 0; text-align: center; font-size: 11px; }
     footer strong { color: white; }
     @media (max-width: 850px) {
       .nav { padding: 14px 0; align-items: flex-start; flex-direction: column; gap: 10px; }
@@ -346,6 +346,7 @@
         <article class="card"><div class="card-mark"></div><h3>Research materials</h3><p>Supplementary materials and resources associated with my research.</p><a class="doi" href="https://github.com/esuu5104/Supplementary-Materials-" target="_blank" rel="noopener">View research repository ↗</a></article>
         <article class="card"><div class="card-mark"></div><h3>GitHub</h3><p>Code repositories and computational projects.</p><a class="doi" href="https://github.com/esuu5104" target="_blank" rel="noopener">Visit GitHub ↗</a></article>
         <article class="card"><div class="card-mark"></div><h3>LinkedIn</h3><p>Professional background, updates, and research connections.</p><a class="doi" href="https://www.linkedin.com/in/esayasawassie/" target="_blank" rel="noopener">Connect on LinkedIn ↗</a></article>
+        <article class="card"><div class="card-mark"></div><h3>Google Scholar</h3><p>Explore my published research, citations, and academic profile.</p><a class="doi" href="https://scholar.google.com/citations?user=OxHjbVkAAAAJ&hl=en" target="_blank" rel="noopener">View Google Scholar ↗</a></article>
       </div>
     </section>
 
@@ -357,6 +358,7 @@
         <a href="mailto:bdu1500466@bdu.edu.et">Email</a>
         <a href="https://www.linkedin.com/in/esayasawassie/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://github.com/esuu5104" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=OxHjbVkAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
       </div>
     </section>
   </main>
